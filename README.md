@@ -7,7 +7,7 @@ Example error log:
   
 ERROR CODE: 13  
 ERROR TEXT: Syntax error  
-	&nbsp COMPILE TIME: Aug  24 2022 17:12:19  
+	--- COMPILE TIME: Aug  24 2022 17:12:19  
 	CURRENT TIME: 24 Aug  24 17:12:58 2022  
 	MODULE: DIFFERENTIATOR  
 		ERROR CALL:  
