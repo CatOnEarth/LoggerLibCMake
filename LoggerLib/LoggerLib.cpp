@@ -1,4 +1,13 @@
-﻿#include "LoggerLib.h"
+﻿/*! \mainpage LoggerLib
+ *
+ * This Logger will help you to easy create logs
+ *
+ */
+
+
+
+
+#include "LoggerLib.h"
 
 int CreateErrorLog(const char* path_log              , 
 				   const char* name_module           , 
