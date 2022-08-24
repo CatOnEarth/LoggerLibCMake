@@ -1,0 +1,100 @@
+\hypertarget{_logger_lib_8cpp}{}\doxysection{Logger\+Lib/\+Logger\+Lib.cpp File Reference}
+\label{_logger_lib_8cpp}\index{LoggerLib/LoggerLib.cpp@{LoggerLib/LoggerLib.cpp}}
+{\ttfamily \#include \char`\"{}Logger\+Lib.\+h\char`\"{}}\newline
+Include dependency graph for Logger\+Lib.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{_logger_lib_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_logger_lib_8cpp_aace6df5d436ab23da84a1089826d486d}{Create\+Error\+Log}} (const char $\ast$path\+\_\+log, const char $\ast$name\+\_\+module, \mbox{\hyperlink{struct___e_r_r_o_r___i_n_f_o____}{\+\_\+\+ERROR\+\_\+\+INFO\+\_\+\+\_\+}} err\+\_\+info, \mbox{\hyperlink{struct___l_o_c_a_t_i_o_n___s_t_r_u_c_t___c_a_l_l____}{\+\_\+\+LOCATION\+\_\+\+STRUCT\+\_\+\+CALL\+\_\+\+\_\+}} first\+\_\+call, \mbox{\hyperlink{struct___l_o_c_a_t_i_o_n___s_t_r_u_c_t___c_a_l_l____}{\+\_\+\+LOCATION\+\_\+\+STRUCT\+\_\+\+CALL\+\_\+\+\_\+}} error\+\_\+call)
+\item 
+int \mbox{\hyperlink{_logger_lib_8cpp_a97ab60b1e976363378f23dabc110a3d5}{Create\+Warn\+Log}} (const char $\ast$path\+\_\+log, const char $\ast$name\+\_\+module, \mbox{\hyperlink{struct___w_a_r_n___i_n_f_o____}{\+\_\+\+WARN\+\_\+\+INFO\+\_\+\+\_\+}} warn\+\_\+info, \mbox{\hyperlink{struct___l_o_c_a_t_i_o_n___s_t_r_u_c_t___c_a_l_l____}{\+\_\+\+LOCATION\+\_\+\+STRUCT\+\_\+\+CALL\+\_\+\+\_\+}} warn\+\_\+call)
+\item 
+int \mbox{\hyperlink{_logger_lib_8cpp_adcfdd5759bf70edefb63cee0dca90ac4}{Create\+Info\+Log}} (const char $\ast$path\+\_\+log, const char $\ast$name\+\_\+module, const char $\ast$info\+\_\+text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_logger_lib_8cpp_aace6df5d436ab23da84a1089826d486d}\label{_logger_lib_8cpp_aace6df5d436ab23da84a1089826d486d}} 
+\index{LoggerLib.cpp@{LoggerLib.cpp}!CreateErrorLog@{CreateErrorLog}}
+\index{CreateErrorLog@{CreateErrorLog}!LoggerLib.cpp@{LoggerLib.cpp}}
+\doxysubsubsection{\texorpdfstring{CreateErrorLog()}{CreateErrorLog()}}
+{\footnotesize\ttfamily int Create\+Error\+Log (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path\+\_\+log,  }\item[{const char $\ast$}]{name\+\_\+module,  }\item[{\mbox{\hyperlink{struct___e_r_r_o_r___i_n_f_o____}{\+\_\+\+ERROR\+\_\+\+INFO\+\_\+\+\_\+}}}]{err\+\_\+info,  }\item[{\mbox{\hyperlink{struct___l_o_c_a_t_i_o_n___s_t_r_u_c_t___c_a_l_l____}{\+\_\+\+LOCATION\+\_\+\+STRUCT\+\_\+\+CALL\+\_\+\+\_\+}}}]{first\+\_\+call,  }\item[{\mbox{\hyperlink{struct___l_o_c_a_t_i_o_n___s_t_r_u_c_t___c_a_l_l____}{\+\_\+\+LOCATION\+\_\+\+STRUCT\+\_\+\+CALL\+\_\+\+\_\+}}}]{error\+\_\+call }\end{DoxyParamCaption})}
+
+Function create error log 
+\begin{DoxyParams}{Parameters}
+{\em path\+\_\+log} & Path to error log file \\
+\hline
+{\em name\+\_\+module} & Module, where error was detected \\
+\hline
+{\em err\+\_\+info} & information about error \\
+\hline
+{\em first\+\_\+call} & Information about first call method \\
+\hline
+{\em error\+\_\+call} & Information about last call method before error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 If can\textquotesingle{}t create/open log file 
+
+0 If log create successful 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_logger_lib_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_logger_lib_8cpp_source}{Logger\+Lib.\+cpp}}.
+
+\mbox{\Hypertarget{_logger_lib_8cpp_adcfdd5759bf70edefb63cee0dca90ac4}\label{_logger_lib_8cpp_adcfdd5759bf70edefb63cee0dca90ac4}} 
+\index{LoggerLib.cpp@{LoggerLib.cpp}!CreateInfoLog@{CreateInfoLog}}
+\index{CreateInfoLog@{CreateInfoLog}!LoggerLib.cpp@{LoggerLib.cpp}}
+\doxysubsubsection{\texorpdfstring{CreateInfoLog()}{CreateInfoLog()}}
+{\footnotesize\ttfamily int Create\+Info\+Log (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path\+\_\+log,  }\item[{const char $\ast$}]{name\+\_\+module,  }\item[{const char $\ast$}]{info\+\_\+text }\end{DoxyParamCaption})}
+
+Function create info log 
+\begin{DoxyParams}{Parameters}
+{\em path\+\_\+log} & Path to warn log file \\
+\hline
+{\em name\+\_\+module} & Module, where error was detected \\
+\hline
+{\em info\+\_\+text} & information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 If can\textquotesingle{}t create/open log file 
+
+0 If log create successful 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_logger_lib_8cpp_source_l00159}{159}} of file \mbox{\hyperlink{_logger_lib_8cpp_source}{Logger\+Lib.\+cpp}}.
+
+\mbox{\Hypertarget{_logger_lib_8cpp_a97ab60b1e976363378f23dabc110a3d5}\label{_logger_lib_8cpp_a97ab60b1e976363378f23dabc110a3d5}} 
+\index{LoggerLib.cpp@{LoggerLib.cpp}!CreateWarnLog@{CreateWarnLog}}
+\index{CreateWarnLog@{CreateWarnLog}!LoggerLib.cpp@{LoggerLib.cpp}}
+\doxysubsubsection{\texorpdfstring{CreateWarnLog()}{CreateWarnLog()}}
+{\footnotesize\ttfamily int Create\+Warn\+Log (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path\+\_\+log,  }\item[{const char $\ast$}]{name\+\_\+module,  }\item[{\mbox{\hyperlink{struct___w_a_r_n___i_n_f_o____}{\+\_\+\+WARN\+\_\+\+INFO\+\_\+\+\_\+}}}]{warn\+\_\+info,  }\item[{\mbox{\hyperlink{struct___l_o_c_a_t_i_o_n___s_t_r_u_c_t___c_a_l_l____}{\+\_\+\+LOCATION\+\_\+\+STRUCT\+\_\+\+CALL\+\_\+\+\_\+}}}]{warn\+\_\+call }\end{DoxyParamCaption})}
+
+Function create warning log 
+\begin{DoxyParams}{Parameters}
+{\em path\+\_\+log} & Path to warn log file \\
+\hline
+{\em name\+\_\+module} & Module, where error was detected \\
+\hline
+{\em warn\+\_\+info} & information about warning \\
+\hline
+{\em warn\+\_\+call} & Information about last call method before warning \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 If can\textquotesingle{}t create/open log file 
+
+0 If log create successful 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_logger_lib_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{_logger_lib_8cpp_source}{Logger\+Lib.\+cpp}}.
+
