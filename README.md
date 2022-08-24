@@ -1,3 +1,3 @@
 # LoggerLibCMake
 Logger C++ CMake
-Documentation(DozyWizard): 
+<t>Documentation(DozyWizard):  https://catonearth.github.io/LoggerLibCMake/html/<t>
