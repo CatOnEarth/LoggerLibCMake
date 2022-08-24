@@ -11,11 +11,11 @@ ERROR TEXT: Syntax error
 	&emsp; CURRENT TIME: 24 Aug  24 17:12:58 2022  
 	&emsp; MODULE: DIFFERENTIATOR  
 		&emsp;&emsp;ERROR CALL:  
-			FILENAME: ..\differentiator\differentiator.cpp  
-			FUNCTION: _ReadExpression__  
-			LINE: 78  
-		ERROR DETECTED:  
-			FILENAME: ..\differentiator\differentiator.cpp  
-			FUNCTION: _CreateBTreeByText__  
-			LINE: 101  
+			&emsp;&emsp;&emsp;FILENAME: ..\differentiator\differentiator.cpp  
+			&emsp;&emsp;&emsp;FUNCTION: _ReadExpression__  
+			&emsp;&emsp;&emsp;LINE: 78  
+		&emsp;&emsp;ERROR DETECTED:  
+			&emsp;&emsp;&emsp;FILENAME: ..\differentiator\differentiator.cpp  
+			&emsp;&emsp;&emsp;FUNCTION: _CreateBTreeByText__  
+			&emsp;&emsp;&emsp;LINE: 101  
 <p>
